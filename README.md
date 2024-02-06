@@ -7,6 +7,7 @@ Common OOP design patterns implemented in typescript
 - [Decorator](https://en.wikipedia.org/wiki/Decorator_pattern)
 - [Facade](https://en.wikipedia.org/wiki/Facade_pattern)
 - [Factory](https://en.wikipedia.org/wiki/Factory_pattern)
+- [Iterator](https://en.wikipedia.org/wiki/Iterator_pattern)
 - [Observer](https://en.wikipedia.org/wiki/Observer_pattern)
 - [Singleton](https://en.wikipedia.org/wiki/Singleton_pattern)
 - [Strategy](https://en.wikipedia.org/wiki/Strategy_pattern)
