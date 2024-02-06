@@ -27,7 +27,7 @@ class ConcreteProductC extends ConcreteProduct {
     }
 }
 
-class Creator {
+export class Creator {
     static createObject(input: string): Product {
         switch (input) {
             case 'a':
@@ -43,8 +43,6 @@ class Creator {
     }
 }
 
-function clientCode() {
-    const productA = Creator.createObject('a')
-}
-
-clientCode();
+const productA = Creator.createObject('a')
+const productB = Creator.createObject('b')
+const productC = Creator.createObject('c')
