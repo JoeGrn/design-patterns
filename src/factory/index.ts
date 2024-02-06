@@ -43,4 +43,8 @@ class Creator {
     }
 }
 
-const product = Creator.createObject('a')
+function clientCode() {
+    const productA = Creator.createObject('a')
+}
+
+clientCode();
