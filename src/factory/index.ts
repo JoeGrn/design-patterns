@@ -46,3 +46,7 @@ export class Creator {
 const productA = Creator.createObject('a')
 const productB = Creator.createObject('b')
 const productC = Creator.createObject('c')
+
+console.log(productA.name)
+console.log(productB.name)
+console.log(productC.name)

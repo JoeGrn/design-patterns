@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
+    "start": "ts-node ./src/$PATTERN/index.ts",
     "build": "rm -r ./build; tsc;",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
 }
