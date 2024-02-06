@@ -6,10 +6,7 @@ class Facade {
         this.subsystem1 = subsystem1 || new Subsystem1();
         this.subsystem2 = subsystem2 || new Subsystem2();
     }
-
-    // Facade manages subsystems
-    // Initialisation in the correct order, order methods should run
-
+    
     public manageSubsystems(): void {
         console.log(this.subsystem1.initialise());
         console.log(this.subsystem2.initialise());

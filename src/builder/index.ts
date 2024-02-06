@@ -3,8 +3,6 @@ interface Builder {
     setEmail(name: string): this
 }
 
-// Class to build - can be generic so long as it fits the builder interface
-
 class User {
     private name: string
     private email: string

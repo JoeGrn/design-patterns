@@ -10,8 +10,6 @@ class Adaptee {
     }
 }
 
-// Class contains logic to make two different implementations compatable
-
 export class Adapter extends Target {
     private adaptee: Adaptee;
 
@@ -31,11 +29,6 @@ function clientCode(target: Target) {
 }
 
 const adaptee = new Adaptee();
-
-// Apply adapter
-
 const adapted = new Adapter(adaptee);
-
-// Compatable
 
 clientCode(adapted);

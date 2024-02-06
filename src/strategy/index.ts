@@ -17,9 +17,6 @@ export class Context {
         this.strategy.doAlgorithm(['a', 'b', 'c', 'd', 'e']);
     }
 }
-
-// Two different method implementations
-
 export class ConcreteStrategyA implements Strategy {
     public doAlgorithm(data: string[]): string[] {
         return data.sort();
@@ -35,8 +32,6 @@ export class ConcreteStrategyB implements Strategy {
 
 const context = new Context(new ConcreteStrategyA());
 context.manipulateData();
-
-// Update method logic at runtime
 
 context.setStrategy(new ConcreteStrategyB());
 context.manipulateData();
