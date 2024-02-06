@@ -3,6 +3,10 @@ export class Singleton {
 
     private constructor() { }
 
+    // Check if instance already exists
+    // If exists return instance
+    // Else create a new instance of class and return instance
+
     public static initialize(): Singleton {
         if (!Singleton.instance) {
             Singleton.instance = new Singleton();

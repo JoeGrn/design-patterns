@@ -3,8 +3,10 @@ interface Product {
 }
 
 class ConcreteProduct implements Product {
-    name = ''
+    name = 'ConcreteProduct'
 }
+
+// Subclasses provide implementation
 
 class ConcreteProductA extends ConcreteProduct {
     constructor() {
@@ -27,6 +29,8 @@ class ConcreteProductC extends ConcreteProduct {
     }
 }
 
+// Logic to allow client to consume implementation of parent class required
+
 export class Creator {
     static createObject(input: string): Product {
         switch (input) {
@@ -36,8 +40,9 @@ export class Creator {
                 return new ConcreteProductB()
             case 'c':
                 return new ConcreteProductC()
+            // Base class often includes default implementation
             default:
-                return new ConcreteProductA()
+                return new ConcreteProduct()
         }
 
     }
